@@ -1,0 +1,40 @@
+name: Update code city
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: code-city
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate contribution city
+        run: python scripts/generar_ciudad.py
+
+      - name: Commit generated SVG when changed
+        run: |
+          if git diff --quiet -- assets/code-city.svg; then
+            echo "No hay cambios en assets/code-city.svg."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/code-city.svg
+          git commit -m "Update code city"
+          git push
