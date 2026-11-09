@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Horacio / Vista previa del paquete</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #0d1117;
+        color: #e6edf3;
+        font:
+          16px/1.5 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background: #161b22;
+        border-bottom: 1px solid #30363d;
+        padding: 14px 20px;
+        z-index: 5;
+        font-size: 13px;
+      }
+      header a {
+        margin-right: 16px;
+      }
+      header p {
+        font-size: 12px;
+        color: #9198a1;
+        margin: 8px 0 0;
+      }
+      main {
+        max-width: 1000px;
+        margin: 28px auto;
+        padding: 24px 30px;
+        border: 1px solid #30363d;
+        border-radius: 6px;
+      }
+      article[hidden] {
+        display: none;
+      }
+      a {
+        color: #79b8ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 8px;
+        margin: 28px 0 16px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      td,
+      th {
+        padding: 12px;
+        border: 1px solid #30363d;
+        text-align: left;
+        vertical-align: top;
+      }
+      p {
+        margin: 0 0 16px;
+      }
+      p img[height] {
+        margin: 3px 2px 3px 0;
+      }
+      code {
+        font: 12px monospace;
+        background: #161b22;
+        padding: 3px;
+      }
+      blockquote {
+        margin: 16px 0;
+        border-left: 4px solid #30363d;
+        padding-left: 16px;
+        color: #9198a1;
+      }
+      hr {
+        border: 0;
+        background: #30363d;
+        height: 4px;
+        margin: 26px 0;
+      }
+      li {
+        margin: 7px 0;
+      }
+      @media (max-width: 700px) {
+        main {
+          margin: 14px;
+          padding: 16px;
+        }
+        body {
+          font-size: 14px;
+        }
+        td {
+          padding: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#home">Perfil</a><a href="#restaurant-management">Restaurant</a
+      ><a href="#fitness-platform">Fitness</a>
+      <p>
+        Vista previa del contenido del paquete. Los campos pendientes son
+        intencionales. Enlaces internos funcionales. Logos con internet. No es
+        el renderizador oficial de GitHub.
+      </p>
+    </header>
+    <main>
+      <article data-view="home">
+        <!-- Perfil GitHub de Horacio. Consulta GUIA.md antes de publicar. -->
+        <p>
+          <img
+            src="../assets/cabecera.gif"
+            width="100%"
+            alt="Horacio Alvarez Escobedo. Software Engineering / Backend Development / APIs y Real-Time Systems."
+          />
+        </p>
+        <table>
+          <tr>
+            <td width="30%">
+              <img
+                src="../assets/foto.png"
+                width="100%"
+                alt="Foto de Horacio: sustituir marcador por tu foto"
+              />
+            </td>
+            <td>
+              <h2>Construir desde el backend.</h2>
+              <p>
+                Estudiante de Ingeniería de Software. Desarrollo backends con
+                TypeScript y NestJS para proyectos SaaS de restaurantes y
+                entrenamiento.
+              </p>
+              <p>
+                <img
+                  src="../assets/terminal.gif"
+                  width="100%"
+                  alt="APIs REST / WebSockets; NestJS / Node.js; datos y reglas de negocio; build, test y deploy; AWS / Render / Vercel; auth, roles y permissions."
+                />
+              </p>
+            </td>
+          </tr>
+        </table>
+        <h2>Productos en construcción</h2>
+        <table>
+          <tr>
+            <td width="50%">
+              <a href="#restaurant-management"
+                ><img
+                  src="../proyectos/restaurant-management/assets/portada.png"
+                  width="100%"
+                  alt="Restaurant Management SaaS"
+              /></a>
+              <h3>Restaurant Management SaaS</h3>
+              <p>
+                Backend orientado a conectar la experiencia del cliente con la
+                operación del restaurante.
+              </p>
+              <p>En desarrollo</p>
+              <p><code>NestJS · Prisma · PostgreSQL</code></p>
+              <p>
+                <a href="#restaurant-management">Ver ficha del proyecto →</a>
+              </p>
+            </td>
+            <td width="50%">
+              <a href="#fitness-platform"
+                ><img
+                  src="../proyectos/fitness-platform/assets/portada.png"
+                  width="100%"
+                  alt="Fitness Platform"
+              /></a>
+              <h3>Fitness Platform</h3>
+              <p>
+                Backend para organizar la relación entre entrenadores, alumnos y
+                planes de entrenamiento.
+              </p>
+              <p>En desarrollo</p>
+              <p><code>NestJS · Prisma · PostgreSQL · Stripe</code></p>
+              <p><a href="#fitness-platform">Ver ficha del proyecto →</a></p>
+            </td>
+          </tr>
+        </table>
+        <h2>Mi stack de trabajo</h2>
+        <!-- Una columna, sin tabla ni CSS responsive: versión para GitHub. Conserva solo herramientas que puedas explicar y demostrar. -->
+        <div>
+          <h3>Backend</h3>
+          <p>
+            <img
+              height="28"
+              src="https://img.shields.io/badge/JavaScript-161B22?style=flat-square&logo=javascript&logoColor=E6EDF3&labelColor=161B22"
+              alt="JavaScript"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/TypeScript-161B22?style=flat-square&logo=typescript&logoColor=E6EDF3&labelColor=161B22"
+              alt="TypeScript"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Node.js-161B22?style=flat-square&logo=nodedotjs&logoColor=E6EDF3&labelColor=161B22"
+              alt="Node.js"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/NestJS-161B22?style=flat-square&logo=nestjs&logoColor=E6EDF3&labelColor=161B22"
+              alt="NestJS"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Express-161B22?style=flat-square&logo=express&logoColor=E6EDF3&labelColor=161B22"
+              alt="Express"
+            />
+          </p>
+        </div>
+        <div>
+          <h3>Bases de datos y ORM</h3>
+          <p>
+            <img
+              height="28"
+              src="https://img.shields.io/badge/PostgreSQL-161B22?style=flat-square&logo=postgresql&logoColor=E6EDF3&labelColor=161B22"
+              alt="PostgreSQL"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Prisma-161B22?style=flat-square&logo=prisma&logoColor=E6EDF3&labelColor=161B22"
+              alt="Prisma"
+            />
+          </p>
+          <p>
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Supabase-161B22?style=flat-square&logo=supabase&logoColor=E6EDF3&labelColor=161B22"
+              alt="Supabase"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Neon-161B22?style=flat-square&logo=neon&logoColor=E6EDF3&labelColor=161B22"
+              alt="Neon"
+            />
+          </p>
+        </div>
+        <div>
+          <h3>Testing y documentación</h3>
+          <p>
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Jest-161B22?style=flat-square&logo=jest&logoColor=E6EDF3&labelColor=161B22"
+              alt="Jest"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Swagger%20%2F%20OpenAPI-161B22?style=flat-square&logo=swagger&logoColor=E6EDF3&labelColor=161B22"
+              alt="Swagger / OpenAPI"
+            />
+          </p>
+        </div>
+        <div>
+          <h3>Contenedores y cloud</h3>
+          <p>
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Docker-161B22?style=flat-square&logo=docker&logoColor=E6EDF3&labelColor=161B22"
+              alt="Docker"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Docker%20Compose-161B22?style=flat-square&logo=docker&logoColor=E6EDF3&labelColor=161B22"
+              alt="Docker Compose"
+            />
+          </p>
+          <p>
+            <img
+              height="28"
+              src="https://img.shields.io/badge/AWS-161B22?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI%2BPHRleHQgeD0iMSIgeT0iMTQiIGZpbGw9IiNlNmVkZjMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9ImJvbGQiPmF3czwvdGV4dD48cGF0aCBkPSJNMyAxN1ExMiAyMiAyMSAxNk0xOCAxNmgzdjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U2ZWRmMyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48L3N2Zz4%3D&logoColor=E6EDF3&labelColor=161B22"
+              alt="AWS"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Render-161B22?style=flat-square&logo=render&logoColor=E6EDF3&labelColor=161B22"
+              alt="Render"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Vercel-161B22?style=flat-square&logo=vercel&logoColor=E6EDF3&labelColor=161B22"
+              alt="Vercel"
+            />
+          </p>
+        </div>
+        <div>
+          <h3>Control de versiones y automatización</h3>
+          <p>
+            <img
+              height="28"
+              src="https://img.shields.io/badge/Git-161B22?style=flat-square&logo=git&logoColor=E6EDF3&labelColor=161B22"
+              alt="Git"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/GitHub-161B22?style=flat-square&logo=github&logoColor=E6EDF3&labelColor=161B22"
+              alt="GitHub"
+            />
+            <img
+              height="28"
+              src="https://img.shields.io/badge/GitHub%20Actions-161B22?style=flat-square&logo=githubactions&logoColor=E6EDF3&labelColor=161B22"
+              alt="GitHub Actions"
+            />
+          </p>
+        </div>
+
+        <hr />
+        <p align="center">Horacio Alvarez Escobedo / Backend</p>
+        <!-- Añade aquí LinkedIn y correo solo cuando decidas hacerlos públicos. -->
+      </article>
+      <article data-view="restaurant-management" hidden>
+        <!-- EDITAR: elimina campos entre corchetes e instrucciones antes de compartir como ficha terminada. -->
+        <p><a href="#home">← Volver al perfil</a></p>
+        <p>
+          <img
+            src="../proyectos/restaurant-management/assets/portada.png"
+            width="100%"
+            alt="Restaurant Management SaaS"
+          />
+        </p>
+        <h1>Restaurant Management SaaS</h1>
+        <blockquote>
+          Backend orientado a conectar la experiencia del cliente con la
+          operación del restaurante.
+        </blockquote>
+        <table>
+          <tr>
+            <td width="35%">
+              <img
+                src="../proyectos/restaurant-management/assets/captura.png"
+                width="100%"
+                alt="Marcador: sustituir por una captura o diagrama real"
+              />
+            </td>
+            <td>
+              <h3>El proyecto de un vistazo</h3>
+              <p>Autor: Horacio Alvarez Escobedo</p>
+              <p>Estado: En desarrollo</p>
+              <p>Periodo: [Inicio — última actualización]</p>
+              <p>Mi rol: [Individual / equipo y contribución concreta]</p>
+              <p>Stack de referencia: NestJS · Prisma · PostgreSQL</p>
+            </td>
+          </tr>
+        </table>
+        <p>
+          Código: [Añadir URL real] · Demo o video: [Añadir URL real] · API:
+          [Añadir URL real]
+        </p>
+        <!-- Cuando existan, convierte lo anterior en enlaces: <a href="URL_REAL">Ver código</a>. No publiques destinos ficticios. -->
+        <p>
+          Ficha inicial basada en el alcance del proyecto. El estado de
+          implementación debe verificarse en el repositorio.
+        </p>
+        <h2>01 / El problema y la solución</h2>
+        <p>
+          Backend orientado a conectar la experiencia del cliente con la
+          operación del restaurante.
+        </p>
+        <p>
+          [Explica quién lo utiliza, qué flujo necesitaba resolver y qué puede
+          hacer hoy. Distingue solución implementada de objetivos futuros.]
+        </p>
+        <h2>02 / Mi contribución</h2>
+        <ul>
+          <li>[Módulo o flujo que desarrollaste y enlace al código]</li>
+          <li>[Decisión que tomaste y motivo]</li>
+          <li>[Prueba o integración que verificaste]</li>
+        </ul>
+        <p>
+          [Si fue en equipo, delimita tu trabajo. Si utilizaste IA, puedes
+          describir su apoyo y qué revisaste y comprobaste tú.]
+        </p>
+        <h2>03 / Funcionalidades y estado real</h2>
+        <table>
+          <tr>
+            <th>Área del proyecto</th>
+            <th>Estado</th>
+            <th>Evidencia</th>
+          </tr>
+          <tr>
+            <td>Sesiones de mesa y acceso por QR</td>
+            <td>Por documentar</td>
+            <td>[Añadir evidencia]</td>
+          </tr>
+          <tr>
+            <td>Gestión de menús y cuentas del personal</td>
+            <td>Por documentar</td>
+            <td>[Añadir evidencia]</td>
+          </tr>
+          <tr>
+            <td>Flujos de pago y notificaciones en tiempo real</td>
+            <td>Por documentar</td>
+            <td>[Añadir evidencia]</td>
+          </tr>
+        </table>
+        <p>
+          Estados sugeridos: implementado, parcial o pendiente. No marques
+          terminado lo que no puedas demostrar.
+        </p>
+        <h2>04 / Arquitectura y tecnologías</h2>
+        <p>
+          [Añade un diagrama real y explica el recorrido de una petición:
+          cliente → autorización → servicio → datos o integración → respuesta.]
+        </p>
+        <table>
+          <tr>
+            <th>Tecnología</th>
+            <th>Uso en este proyecto</th>
+            <th>Motivo</th>
+          </tr>
+          <tr>
+            <td>[Tecnología real]</td>
+            <td>[Qué parte implementa]</td>
+            <td>[Por qué la elegiste]</td>
+          </tr>
+        </table>
+        <p>
+          [Supabase, Neon y otras herramientas del perfil no se atribuyen
+          automáticamente a este proyecto. Incluye solo las utilizadas aquí.]
+        </p>
+        <h2>05 / Decisiones y retos técnicos</h2>
+        <h3>[Reto concreto]</h3>
+        <ul>
+          <li>Problema: [restricción o caso que podía fallar].</li>
+          <li>Opciones: [alternativas realmente consideradas].</li>
+          <li>Implementación: [solución y enlace al código].</li>
+          <li>Verificación: [prueba o pasos reproducibles].</li>
+          <li>Limitación: [qué caso sigue sin resolver].</li>
+        </ul>
+        <h2>06 / Pruebas y evidencia</h2>
+        <table>
+          <tr>
+            <th>Caso</th>
+            <th>Tipo</th>
+            <th>Cómo comprobarlo</th>
+          </tr>
+          <tr>
+            <td>[Flujo válido]</td>
+            <td>[Unitaria / integración / e2e / manual]</td>
+            <td>[Archivo o pasos]</td>
+          </tr>
+          <tr>
+            <td>[Permiso o error]</td>
+            <td>[Tipo real]</td>
+            <td>[Archivo o pasos]</td>
+          </tr>
+        </table>
+        <p>
+          [Si no hay pruebas automatizadas, indícalo. Para métricas, añade
+          entorno, herramienta, carga, duración y fecha. No inventes cobertura
+          ni rendimiento.]
+        </p>
+        <h2>07 / Cómo probarlo</h2>
+        <h3>Demo o video</h3>
+        <p>
+          [Enlace real y limitaciones. Usa datos de prueba; no publiques
+          credenciales reales ni permisos administrativos.]
+        </p>
+        <h3>Ejecución local</h3>
+        <ol>
+          <li>[Versiones y requisitos]</li>
+          <li>[Clonar el repositorio del código, no el del perfil]</li>
+          <li>[Instalación verificada]</li>
+          <li>[Variables a partir de .env.example, sin secretos]</li>
+          <li>[Migraciones y datos de prueba]</li>
+          <li>[Comandos comprobados para iniciar y probar]</li>
+        </ol>
+        <h3>Flujo de evaluación</h3>
+        <ol>
+          <li>[Acción inicial]</li>
+          <li>[Acción que muestra la regla de negocio]</li>
+          <li>[Resultado esperado]</li>
+          <li>[Caso de error y respuesta esperada]</li>
+        </ol>
+        <h2>08 / Limitaciones y próximos cambios</h2>
+        <ul>
+          <li>Limitación actual: [qué falta].</li>
+          <li>Próxima mejora: [cambio concreto y motivo].</li>
+          <li>Fuera de alcance: [qué no se intentó resolver].</li>
+        </ul>
+        <h2>09 / Qué aprendí</h2>
+        <p>
+          [Una lección concreta, el error o descubrimiento que la originó y cómo
+          cambió tu implementación.]
+        </p>
+        <hr />
+        <p>
+          <a href="#home">← Volver al perfil</a> ·
+          <a href="#fitness-platform">Ver el otro proyecto →</a>
+        </p>
+      </article>
+      <article data-view="fitness-platform" hidden>
+        <!-- EDITAR: elimina campos entre corchetes e instrucciones antes de compartir como ficha terminada. -->
+        <p><a href="#home">← Volver al perfil</a></p>
+        <p>
+          <img
+            src="../proyectos/fitness-platform/assets/portada.png"
+            width="100%"
+            alt="Fitness Platform"
+          />
+        </p>
+        <h1>Fitness Platform</h1>
+        <blockquote>
+          Backend para organizar la relación entre entrenadores, alumnos y
+          planes de entrenamiento.
+        </blockquote>
+        <table>
+          <tr>
+            <td width="35%">
+              <img
+                src="../proyectos/fitness-platform/assets/captura.png"
+                width="100%"
+                alt="Marcador: sustituir por una captura o diagrama real"
+              />
+            </td>
+            <td>
+              <h3>El proyecto de un vistazo</h3>
+              <p>Autor: Horacio Alvarez Escobedo</p>
+              <p>Estado: En desarrollo</p>
+              <p>Periodo: [Inicio — última actualización]</p>
+              <p>Mi rol: [Individual / equipo y contribución concreta]</p>
+              <p>Stack de referencia: NestJS · Prisma · PostgreSQL · Stripe</p>
+            </td>
+          </tr>
+        </table>
+        <p>
+          Código: [Añadir URL real] · Demo o video: [Añadir URL real] · API:
+          [Añadir URL real]
+        </p>
+        <!-- Cuando existan, convierte lo anterior en enlaces: <a href="URL_REAL">Ver código</a>. No publiques destinos ficticios. -->
+        <p>
+          Ficha inicial basada en el alcance del proyecto. El estado de
+          implementación debe verificarse en el repositorio.
+        </p>
+        <h2>01 / El problema y la solución</h2>
+        <p>
+          Backend para organizar la relación entre entrenadores, alumnos y
+          planes de entrenamiento.
+        </p>
+        <p>
+          [Explica quién lo utiliza, qué flujo necesitaba resolver y qué puede
+          hacer hoy. Distingue solución implementada de objetivos futuros.]
+        </p>
+        <h2>02 / Mi contribución</h2>
+        <ul>
+          <li>[Módulo o flujo que desarrollaste y enlace al código]</li>
+          <li>[Decisión que tomaste y motivo]</li>
+          <li>[Prueba o integración que verificaste]</li>
+        </ul>
+        <p>
+          [Si fue en equipo, delimita tu trabajo. Si utilizaste IA, puedes
+          describir su apoyo y qué revisaste y comprobaste tú.]
+        </p>
+        <h2>03 / Funcionalidades y estado real</h2>
+        <table>
+          <tr>
+            <th>Área del proyecto</th>
+            <th>Estado</th>
+            <th>Evidencia</th>
+          </tr>
+          <tr>
+            <td>Gestión de usuarios, entrenadores y alumnos</td>
+            <td>Por documentar</td>
+            <td>[Añadir evidencia]</td>
+          </tr>
+          <tr>
+            <td>Planes y rutinas de entrenamiento</td>
+            <td>Por documentar</td>
+            <td>[Añadir evidencia]</td>
+          </tr>
+          <tr>
+            <td>Autenticación y suscripciones</td>
+            <td>Por documentar</td>
+            <td>[Añadir evidencia]</td>
+          </tr>
+        </table>
+        <p>
+          Estados sugeridos: implementado, parcial o pendiente. No marques
+          terminado lo que no puedas demostrar.
+        </p>
+        <h2>04 / Arquitectura y tecnologías</h2>
+        <p>
+          [Añade un diagrama real y explica el recorrido de una petición:
+          cliente → autorización → servicio → datos o integración → respuesta.]
+        </p>
+        <table>
+          <tr>
+            <th>Tecnología</th>
+            <th>Uso en este proyecto</th>
+            <th>Motivo</th>
+          </tr>
+          <tr>
+            <td>[Tecnología real]</td>
+            <td>[Qué parte implementa]</td>
+            <td>[Por qué la elegiste]</td>
+          </tr>
+        </table>
+        <p>
+          [Supabase, Neon y otras herramientas del perfil no se atribuyen
+          automáticamente a este proyecto. Incluye solo las utilizadas aquí.]
+        </p>
+        <h2>05 / Decisiones y retos técnicos</h2>
+        <h3>[Reto concreto]</h3>
+        <ul>
+          <li>Problema: [restricción o caso que podía fallar].</li>
+          <li>Opciones: [alternativas realmente consideradas].</li>
+          <li>Implementación: [solución y enlace al código].</li>
+          <li>Verificación: [prueba o pasos reproducibles].</li>
+          <li>Limitación: [qué caso sigue sin resolver].</li>
+        </ul>
+        <h2>06 / Pruebas y evidencia</h2>
+        <table>
+          <tr>
+            <th>Caso</th>
+            <th>Tipo</th>
+            <th>Cómo comprobarlo</th>
+          </tr>
+          <tr>
+            <td>[Flujo válido]</td>
+            <td>[Unitaria / integración / e2e / manual]</td>
+            <td>[Archivo o pasos]</td>
+          </tr>
+          <tr>
+            <td>[Permiso o error]</td>
+            <td>[Tipo real]</td>
+            <td>[Archivo o pasos]</td>
+          </tr>
+        </table>
+        <p>
+          [Si no hay pruebas automatizadas, indícalo. Para métricas, añade
+          entorno, herramienta, carga, duración y fecha. No inventes cobertura
+          ni rendimiento.]
+        </p>
+        <h2>07 / Cómo probarlo</h2>
+        <h3>Demo o video</h3>
+        <p>
+          [Enlace real y limitaciones. Usa datos de prueba; no publiques
+          credenciales reales ni permisos administrativos.]
+        </p>
+        <h3>Ejecución local</h3>
+        <ol>
+          <li>[Versiones y requisitos]</li>
+          <li>[Clonar el repositorio del código, no el del perfil]</li>
+          <li>[Instalación verificada]</li>
+          <li>[Variables a partir de .env.example, sin secretos]</li>
+          <li>[Migraciones y datos de prueba]</li>
+          <li>[Comandos comprobados para iniciar y probar]</li>
+        </ol>
+        <h3>Flujo de evaluación</h3>
+        <ol>
+          <li>[Acción inicial]</li>
+          <li>[Acción que muestra la regla de negocio]</li>
+          <li>[Resultado esperado]</li>
+          <li>[Caso de error y respuesta esperada]</li>
+        </ol>
+        <h2>08 / Limitaciones y próximos cambios</h2>
+        <ul>
+          <li>Limitación actual: [qué falta].</li>
+          <li>Próxima mejora: [cambio concreto y motivo].</li>
+          <li>Fuera de alcance: [qué no se intentó resolver].</li>
+        </ul>
+        <h2>09 / Qué aprendí</h2>
+        <p>
+          [Una lección concreta, el error o descubrimiento que la originó y cómo
+          cambió tu implementación.]
+        </p>
+        <hr />
+        <p>
+          <a href="#home">← Volver al perfil</a> ·
+          <a href="#restaurant-management">Ver el otro proyecto →</a>
+        </p>
+      </article>
+    </main>
+    <script>
+      function route() {
+        let key = location.hash.slice(1) || "home";
+        const views = [...document.querySelectorAll("article")];
+        if (!views.some((e) => e.dataset.view === key)) key = "home";
+        views.forEach((e) => (e.hidden = e.dataset.view !== key));
+        window.scrollTo(0, 0);
+      }
+      addEventListener("hashchange", route);
+      route();
+    </script>
+  </body>
+</html>
