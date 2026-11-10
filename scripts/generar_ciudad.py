@@ -33,15 +33,15 @@ def fetch_contributions():
 def poly(points,fill,stroke='#080808'):
     return '<polygon points="'+' '.join(f'{x:.1f},{y:.1f}' for x,y in points)+f'" fill="{fill}" stroke="{stroke}" stroke-width=".7"/>'
 
-def lighting(d,i):
-    rng=random.Random('K4YZER4/'+d['date'].isoformat())
+def lighting(d,i,floor):
+    rng=random.Random('K4YZER4/'+d['date'].isoformat()+'/floor/'+str(floor))
     holds=[rng.uniform(LIGHT_MIN,LIGHT_MAX) for _ in range(16)]
     total=sum(holds)+16*FADE;elapsed=0;value=1;frames=['0%{opacity:1}']
     for hold in holds:
         elapsed+=hold;frames.append(f'{elapsed/total*100:.5f}%{{opacity:{value}}}')
         elapsed+=FADE;value=.12 if value==1 else 1
         frames.append(f'{min(100,elapsed/total*100):.5f}%{{opacity:{value}}}')
-    return f'@keyframes light{i}{{'+''.join(frames)+'}'+f'.l{i}{{animation:light{i} {total:.5f}s linear {4.65+rng.uniform(.5,4):.5f}s infinite}}'
+    return f'@keyframes light{i}_{floor}{{'+''.join(frames)+'}'+f'.l{i}_{floor}{{animation:light{i}_{floor} {total:.5f}s linear {4.65+rng.uniform(.5,4):.5f}s infinite}}'
 
 def generate(days):
     if not days:raise RuntimeError('No hay datos')
@@ -57,14 +57,18 @@ def generate(days):
         c=PALETTE[max(1,d['level']) if count else 0]
         label=escape(f"{d['date'].isoformat()}: {count} contribuciones")
         p=[f'<g transform="translate({x:.1f} {y:.1f})" aria-label="{label}"><title>{label}</title>',poly([(-3,2),(20,7),(34,-1),(10,-6)],'#050505'),f'<g class="grow" style="animation-delay:{i/max(1,len(days)-1)*4:.5f}s">',poly([(0,-h),(16,-h+4),(16,4),(0,0)],'#625746' if count else '#202020'),poly([(16,-h+4),(25,-h-1),(25,-1),(16,4)],'#35312B' if count else '#131313'),poly([(0,-h),(9,-h-5),(25,-h-1),(16,-h+4)],'#897859' if count else '#303030','#383838')]
-        paths=[]
-        for z in range(8,h-3,9):
+        for floor,z in enumerate(range(8,h-3,9)):
+            paths=[]
             for col in range(2):
-                wx=2.5+col*7;wy=-h+z+col*1.7;paths.append(f'M{wx} {wy}l4 .9v4.2l-4 -.9z')
+                wx=2.5+col*7;wy=-h+z+col*1.7
+                paths.append(f'M{wx} {wy}l4 .9v4.2l-4 -.9z')
             paths.append(f'M18.5 {-h+z+1}l4 -2.1v4.2l-4 2.1z')
-        if count:css.append(lighting(d,i));p.append(f'<g class="lights l{i}">')
-        p.append(f'<path d="{" ".join(paths)}" fill="{c}" opacity="{1 if count else .5}"/>')
-        if count:p.append('</g>')
+            if count:
+                css.append(lighting(d,i,floor))
+                p.append(f'<g class="lights l{i}_{floor}" data-floor="{floor}">')
+            p.append(f'<path d="{" ".join(paths)}" fill="{c}" opacity="{1 if count else .5}"/>')
+            if count:
+                p.append('</g>')
         if count>6:p.append(f'<path d="M18 {-h-2}V{-h-13}" stroke="#D6C19A" stroke-width=".8"/><circle cx="18" cy="{-h-14}" r="1.3" fill="#EAD6AF"/>')
         p.append('</g></g>');entries.append((weekday,week,''.join(p)))
     style='.grow{transform:scaleY(1);transform-origin:0px 0px;animation:build .65s ease-out both}.lights{opacity:1}@keyframes build{from{transform:scaleY(.015)}to{transform:scaleY(1)}}'+''.join(css)+'@media(prefers-reduced-motion:reduce){.grow,.lights{animation:none!important;transform:none!important;opacity:1!important}}'
