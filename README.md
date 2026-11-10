@@ -30,7 +30,7 @@
 <img height="28" src="https://img.shields.io/badge/GitHub%20Actions-161B22?style=flat-square&logo=githubactions&logoColor=E6EDF3&labelColor=161B22" alt="GitHub Actions">
 </p></div>
 
-<h2>Ciudad del código</h2>
+<h2>Contribuciones</h2>
 <p><img src="assets/code-city.svg" width="100%" alt="Ciudad isométrica de la actividad pública de contribuciones de K4YZER4 durante el último año."></p>
 
 <hr><p align="center">Horacio Alvarez Escobedo / Backend</p>
