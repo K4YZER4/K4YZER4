@@ -33,4 +33,8 @@
 <h2>Contributions</h2>
 <p><img src="assets/code-city.svg" width="100%" alt="Isometric city of public GitHub contribution activity for K4YZER4 over the last year."></p>
 
-<hr><p align="center">Horacio Alvarez Escobedo / Backend</p>
+<hr>
+<p align="center">
+  Horacio Alvarez Escobedo / Backend<br>
+  <a href="mailto:horacio-alvarez@k4yzer4.dev">horacio-alvarez@k4yzer4.dev</a>
+</p>
