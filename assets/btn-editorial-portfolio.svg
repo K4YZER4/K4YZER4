@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="44" viewBox="0 0 320 44" role="img" aria-label="SEE MY WEB PORTFOLIO">
+  <title>SEE MY WEB PORTFOLIO</title>
+  <defs>
+    <clipPath id="btn-clip">
+      <rect x="0.5" y="0.5" width="319" height="43" rx="2" />
+    </clipPath>
+    <linearGradient id="bg-shimmer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="text-shimmer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a8a298" stop-opacity="0" />
+      <stop offset="35%" stop-color="#9e988e" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#e2ddd3" stop-opacity="0.95" />
+      <stop offset="65%" stop-color="#9e988e" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#a8a298" stop-opacity="0" />
+    </linearGradient>
+    <mask id="label-mask">
+      <rect x="0" y="0" width="320" height="44" fill="#000000" />
+      <text x="50" y="25.5" class="label" fill="#ffffff">SEE MY WEB PORTFOLIO</text>
+    </mask>
+    <style>
+      .label {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "DejaVu Sans", Helvetica, Arial, sans-serif;
+        font-size: 11.5px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+      }
+      .bg-shimmer {
+        animation: bgSweep 4.2s ease-in-out infinite;
+      }
+      .text-shimmer {
+        animation: textSweep 4.2s ease-in-out infinite;
+      }
+      .arrow {
+        animation: nudge 2.4s ease-in-out infinite;
+      }
+      .rule {
+        animation: drawRule 4.2s ease-in-out infinite;
+      }
+      @keyframes bgSweep {
+        0%   { transform: translateX(-120px) skewX(-18deg); opacity: 0; }
+        12%  { opacity: 1; }
+        46%  { transform: translateX(350px) skewX(-18deg); opacity: 1; }
+        52%  { opacity: 0; }
+        100% { transform: translateX(350px) skewX(-18deg); opacity: 0; }
+      }
+      @keyframes textSweep {
+        0%   { transform: translateX(-20px) skewX(-18deg); opacity: 0; }
+        10%  { opacity: 1; }
+        44%  { transform: translateX(285px) skewX(-18deg); opacity: 1; }
+        50%  { opacity: 0; }
+        100% { transform: translateX(285px) skewX(-18deg); opacity: 0; }
+      }
+      @keyframes nudge {
+        0%, 100% { transform: translateX(0px); }
+        50%      { transform: translateX(4px); }
+      }
+      @keyframes drawRule {
+        0%   { transform: scaleX(0); opacity: 0.75; }
+        40%  { transform: scaleX(1); opacity: 1; }
+        75%  { transform: scaleX(1); opacity: 1; }
+        100% { transform: scaleX(0); opacity: 0.75; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#btn-clip)">
+    <!-- Editorial warm paper base matching cabecera.gif -->
+    <rect x="0.5" y="0.5" width="319" height="43" rx="2" fill="#eeeae2" stroke="#171717" stroke-width="1" />
+
+    <!-- Subtle editorial paper shimmer -->
+    <rect class="bg-shimmer" x="0" y="0" width="80" height="44" fill="url(#bg-shimmer-grad)" />
+
+    <!-- Minimalist editorial globe icon -->
+    <g fill="none" stroke="#171717" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="22" cy="22" r="7.2" stroke-width="1.25" />
+      <ellipse cx="22" cy="22" rx="3.4" ry="7.2" stroke-width="1.1" />
+      <line x1="14.8" y1="22" x2="29.2" y2="22" stroke-width="1.1" />
+      <path d="M16.2 18.3 Q22 19.8 27.8 18.3" stroke-width="1.05" />
+      <path d="M16.2 25.7 Q22 24.2 27.8 25.7" stroke-width="1.05" />
+    </g>
+
+    <!-- Editorial vertical hairline divider -->
+    <line x1="39" y1="13" x2="39" y2="31" stroke="#c8c3ba" stroke-width="1" />
+
+    <!-- Base editorial label -->
+    <text x="50" y="25.5" class="label" fill="#171717">SEE MY WEB PORTFOLIO</text>
+
+    <!-- Masked shimmer sweep strictly across the letters -->
+    <g mask="url(#label-mask)">
+      <rect class="text-shimmer" x="0" y="8" width="58" height="28" fill="url(#text-shimmer-grad)" />
+    </g>
+
+    <!-- Animated editorial arrow -->
+    <g class="arrow">
+      <line x1="286" y1="22" x2="300" y2="22" stroke="#171717" stroke-width="1.5" stroke-linecap="square" />
+      <polyline points="295,17.5 300.5,22 295,26.5" fill="none" stroke="#171717" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+    </g>
+
+    <!-- Animated bottom editorial hairline -->
+    <rect class="rule" x="0.5" y="41.5" width="319" height="2" fill="#171717" style="transform-origin: 0.5px 42.5px;" />
+  </g>
+</svg>

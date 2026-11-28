@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="36" viewBox="0 0 190 36" role="img" aria-label="SEE GITHUB REPO">
+  <title>SEE GITHUB REPO</title>
+  <defs>
+    <clipPath id="gh-clip">
+      <rect x="0.5" y="0.5" width="189" height="35" rx="2" />
+    </clipPath>
+    <linearGradient id="gh-bg-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eeeae2" stop-opacity="0" />
+      <stop offset="50%" stop-color="#eeeae2" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#eeeae2" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="gh-text-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <mask id="gh-label-mask">
+      <rect x="0" y="0" width="190" height="36" fill="#000000" />
+      <text x="41" y="21.5" class="label" fill="#ffffff">SEE GITHUB REPO</text>
+    </mask>
+    <style>
+      .label {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "DejaVu Sans", Helvetica, Arial, sans-serif;
+        font-size: 9.6px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+      }
+      .bg-shimmer {
+        animation: bgSweep 4.2s ease-in-out infinite;
+        animation-delay: 0.6s;
+      }
+      .text-shimmer {
+        animation: textSweep 4.2s ease-in-out infinite;
+        animation-delay: 0.6s;
+      }
+      .arrow {
+        animation: nudge 2.4s ease-in-out infinite;
+        animation-delay: 0.3s;
+      }
+      .rule {
+        animation: drawRule 4.2s ease-in-out infinite;
+        animation-delay: 0.6s;
+      }
+      @keyframes bgSweep {
+        0%   { transform: translateX(-80px) skewX(-18deg); opacity: 0; }
+        12%  { opacity: 1; }
+        46%  { transform: translateX(220px) skewX(-18deg); opacity: 1; }
+        52%  { opacity: 0; }
+        100% { transform: translateX(220px) skewX(-18deg); opacity: 0; }
+      }
+      @keyframes textSweep {
+        0%   { transform: translateX(-10px) skewX(-18deg); opacity: 0; }
+        10%  { opacity: 1; }
+        44%  { transform: translateX(175px) skewX(-18deg); opacity: 1; }
+        50%  { opacity: 0; }
+        100% { transform: translateX(175px) skewX(-18deg); opacity: 0; }
+      }
+      @keyframes nudge {
+        0%, 100% { transform: translateX(0px); }
+        50%      { transform: translateX(3px); }
+      }
+      @keyframes drawRule {
+        0%   { transform: scaleX(0); opacity: 0.65; }
+        40%  { transform: scaleX(1); opacity: 1; }
+        75%  { transform: scaleX(1); opacity: 1; }
+        100% { transform: scaleX(0); opacity: 0.65; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#gh-clip)">
+    <rect x="0.5" y="0.5" width="189" height="35" rx="2" fill="#171717" stroke="#494640" stroke-width="1" />
+    <rect class="bg-shimmer" x="0" y="0" width="56" height="36" fill="url(#gh-bg-shimmer)" />
+
+    <!-- Minimalist GitHub Octocat icon -->
+    <path
+      d="M18 11.4c-3.65 0-6.6 2.95-6.6 6.6 0 2.92 1.89 5.39 4.51 6.26.33.06.45-.14.45-.32 0-.16-.01-.68-.01-1.23-1.83.4-2.22-.78-2.22-.78-.3-.76-.73-.96-.73-.96-.6-.41.05-.4.05-.4.66.05 1.01.68 1.01.68.59 1.01 1.55.72 1.93.55.06-.43.23-.72.42-.88-1.46-.17-3-.73-3-3.25 0-.72.26-1.31.68-1.77-.07-.17-.3-.84.06-1.75 0 0 .56-.18 1.82.68.53-.15 1.09-.22 1.65-.22.56 0 1.12.07 1.65.22 1.26-.86 1.82-.68 1.82-.68.36.91.13 1.58.06 1.75.42.46.68 1.05.68 1.77 0 2.53-1.54 3.08-3.01 3.24.24.21.45.61.45 1.23 0 .89-.01 1.6-.01 1.82 0 .18.12.39.46.32 2.62-.87 4.5-3.34 4.5-6.26 0-3.65-2.95-6.6-6.6-6.6z"
+      fill="#eeeae2"
+    />
+
+    <line x1="33" y1="10" x2="33" y2="26" stroke="#3a3834" stroke-width="1" />
+
+    <text x="41" y="21.5" class="label" fill="#eeeae2">SEE GITHUB REPO</text>
+    <g mask="url(#gh-label-mask)">
+      <rect class="text-shimmer" x="0" y="6" width="44" height="24" fill="url(#gh-text-shimmer)" />
+    </g>
+
+    <g class="arrow">
+      <line x1="165" y1="18" x2="175" y2="18" stroke="#eeeae2" stroke-width="1.35" stroke-linecap="square" />
+      <polyline points="171.5,14.5 175.8,18 171.5,21.5" fill="none" stroke="#eeeae2" stroke-width="1.35" stroke-linecap="square" stroke-linejoin="miter" />
+    </g>
+
+    <rect class="rule" x="0.5" y="33.5" width="189" height="2" fill="#eeeae2" style="transform-origin: 0.5px 34.5px;" />
+  </g>
+</svg>
