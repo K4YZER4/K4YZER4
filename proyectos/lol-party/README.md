@@ -8,7 +8,7 @@
   &nbsp;
   <a href="https://github.com/K4YZER4/lol-minigames" target="_blank"><img src="../../assets/btn-editorial-github.svg" alt="SEE GITHUB REPO" width="190" height="36" /></a>
 </p>
-<p><strong>Repository:</strong> <a href="https://github.com/K4YZER4/lol-minigames">Monorepo (GitHub)</a></p>
+<p><strong>Repository:</strong> <a href="https://github.com/K4YZER4/lol-minigames" target="_blank">Monorepo (GitHub)</a></p>
 
 <table>
   <tr>
@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td><strong>Case Study &amp; Demo</strong></td>
-    <td><a href="https://lol-party.k4yzer4.dev/portafolio">lol-party.k4yzer4.dev/portafolio</a></td>
+    <td><a href="https://lol-party.k4yzer4.dev/portafolio" target="_blank">lol-party.k4yzer4.dev/portafolio</a></td>
   </tr>
   <tr>
     <td><strong>Stack</strong></td>

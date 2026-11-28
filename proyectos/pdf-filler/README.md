@@ -8,7 +8,7 @@
   &nbsp;
   <a href="https://github.com/K4YZER4/portafolio-backend/tree/main/PDF-FILLER" target="_blank"><img src="../../assets/btn-editorial-github.svg" alt="SEE GITHUB REPO" width="190" height="36" /></a>
 </p>
-<p><strong>Repositories:</strong> <a href="https://github.com/K4YZER4/portafolio-backend/tree/main/PDF-FILLER">Backend (NestJS)</a> · <a href="https://github.com/K4YZER4/PDF-FILLER-FRONTEND">Frontend</a></p>
+<p><strong>Repositories:</strong> <a href="https://github.com/K4YZER4/portafolio-backend/tree/main/PDF-FILLER" target="_blank">Backend (NestJS)</a> · <a href="https://github.com/K4YZER4/PDF-FILLER-FRONTEND" target="_blank">Frontend</a></p>
 
 <table>
   <tr>
@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td><strong>Live Demo</strong></td>
-    <td><a href="https://pdf-filler.k4yzer4.dev">pdf-filler.k4yzer4.dev</a></td>
+    <td><a href="https://pdf-filler.k4yzer4.dev" target="_blank">pdf-filler.k4yzer4.dev</a></td>
   </tr>
   <tr>
     <td><strong>Stack</strong></td>

@@ -8,7 +8,7 @@
   &nbsp;
   <a href="https://github.com/K4YZER4/RITMO" target="_blank"><img src="../../assets/btn-editorial-github.svg" alt="SEE GITHUB REPO" width="190" height="36" /></a>
 </p>
-<p><strong>Repositories:</strong> <a href="https://github.com/K4YZER4/RITMO">Repository (GitHub)</a> · <a href="https://github.com/K4YZER4/portafolio-backend">Deploy Infra (Docker + Nginx)</a></p>
+<p><strong>Repositories:</strong> <a href="https://github.com/K4YZER4/RITMO" target="_blank">Repository (GitHub)</a> · <a href="https://github.com/K4YZER4/portafolio-backend" target="_blank">Deploy Infra (Docker + Nginx)</a></p>
 
 <table>
   <tr>
@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td><strong>Live Demo</strong></td>
-    <td><a href="https://ritmo.k4yzer4.dev">ritmo.k4yzer4.dev</a></td>
+    <td><a href="https://ritmo.k4yzer4.dev" target="_blank">ritmo.k4yzer4.dev</a></td>
   </tr>
   <tr>
     <td><strong>Stack</strong></td>
